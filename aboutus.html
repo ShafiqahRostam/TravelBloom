@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <nav id="navMain">
+      <div style="max-width: 1280px; margin: auto">
+        <div id="logo">
+          <img src="./assets/images/site/logo.png" alt="" style="height: 50px" />
+        </div>
+        <ul>
+          <li>
+            <a href="travel_recommendation.html">Home</a>
+          </li>
+          <li>
+            <a href="aboutus.html" class="active">About Us</a>
+          </li>
+          <li>
+            <a href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+        <div id="searchBar" style="visibility: hidden">
+          <input type="text" name="txtSearch" id="txtSearch" placeholder="Enter a destination or keyword" />
+          <button id="btnSearch">Search</button>
+          <button id="btnClear">Clear</button>
+        </div>
+      </div>
+    </nav>
+    <div id="aboutUs" class="content">
+      <div>
+        <section>
+          <h1>About Us</h1>
+          <p>
+            At TravelBloom, we believe every journey should be as unique as you are. Founded on the passion for exploration and a desire to connect people with memorable destinations, TravelBloom offers personalized travel recommendations that cater to your preferences and dreams. Our platform is built on innovative technology and deep travel expertise to ensure your next trip is not just a getaway, but a transformative experience. Let TravelBloom be your guide to the world's wonders, where
+            every trip is tailored to bloom into an unforgettable adventure.
+          </p>
+        </section>
+        <section style="font-size: 1.25rem">
+          <h2>Our Team</h2>
+          <div style="display: flex; gap: 2em">
+            <div class="teamMember">
+              <img src="assets/images/team/ella_summers.jpg" class="teamMemberPicture" />
+              <span class="teamMemberTitle">Ella Summers</span>
+              <span class="teamMemberPosition">Co-Founder & Chief Experience Officer</span>
+              <p>Ella is the visionary behind our unique travel curation approach. With over a decade in the travel industry, she ensures that all our recommendations not only meet but exceed our travelers' expectations, crafting journeys that are both engaging and enriching.</p>
+            </div>
+            <div class="teamMember">
+              <img src="assets/images/team/liam_chen.jpg" class="teamMemberPicture" />
+              <span class="teamMemberTitle">Liam Chen</span>
+              <span class="teamMemberPosition">Head of Technology</span>
+              <p>Liam spearheads the development of TravelBloom's cutting-edge platform. His expertise in scalable technology solutions makes him pivotal in integrating innovative features that enhance user experience, making travel planning seamless and personalized.</p>
+            </div>
+            <div class="teamMember">
+              <img src="assets/images/team/maya_rodriguez.jpg" class="teamMemberPicture" />
+              <span class="teamMemberTitle">Maya Rodriguez</span>
+              <span class="teamMemberPosition">Creative Director</span>
+              <p>Maya brings stories to life at TravelBloom. Her creative genius in visual and content creation helps communicate the essence of destinations in captivating ways. She leads the creative team in producing inspiring and insightful content that resonates with our audience.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div id="socialMedia" style="position: absolute; left: 0; top: 40%">
+      <ul>
+        <li><a href="https://twitter.com/" class="social-media-icon" id="twitter">Twitter</a></li>
+        <li><a href="https://www.facebook.com/" class="social-media-icon" id="facebook">Facebook</a></li>
+        <li><a href="https://www.instagram.com/" class="social-media-icon" id="instagram">Instagram</a></li>
+        <li><a href="https://www.youtube.com/" class="social-media-icon" id="youtube">YouTube</a></li>
+      </ul>
+    </div>
+    <script src="./travel_recommendation.js"></script>
+  </body>
+</html>

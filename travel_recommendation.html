@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <nav id="navMain">
+      <div>
+        <div id="logo">
+          <img src="./assets/images/site/logo.png" alt="" style="height: 50px" />
+        </div>
+        <ul>
+          <li>
+            <a href="travel_recommendation.html" class="active">Home</a>
+          </li>
+          <li>
+            <a href="aboutus.html">About Us</a>
+          </li>
+          <li>
+            <a href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+        <div id="searchBar" style="position: relative">
+          <input type="text" name="txtSearch" id="txtSearch" placeholder="Enter a destination or keyword" />
+          <button id="btnSearch">Search</button>
+          <button id="btnClear">Clear</button>
+          <div id="searchResults"></div>
+        </div>
+      </div>
+    </nav>
+    <div class="content" id="divHome">
+      <div>
+        <h1>Blossom Your Journey</h1>
+        <p>Embark on a voyage of discovery with TravelBloom, your ultimate companion for personalized travel recommendations. Whether you crave quiet retreats or bustling city tours, our curated insights help you uncover the ideal destinations that blossom with possibility. Let TravelBloom guide you to vibrant experiences and create memories that last a lifetime. Start exploring today and see where your curiosity takes you!</p>
+        <button id="btnBook" class="btn-primary large">Book Now</button>
+      </div>
+    </div>
+    <div id="socialMedia" style="position: absolute; left: 0; top: 40%">
+      <ul>
+        <li><a href="https://twitter.com/" class="social-media-icon" id="twitter">Twitter</a></li>
+        <li><a href="https://www.facebook.com/" class="social-media-icon" id="facebook">Facebook</a></li>
+        <li><a href="https://www.instagram.com/" class="social-media-icon" id="instagram">Instagram</a></li>
+        <li><a href="https://www.youtube.com/" class="social-media-icon" id="youtube">YouTube</a></li>
+      </ul>
+    </div>
+    <script src="./travel_recommendation.js"></script>
+  </body>
+</html>
