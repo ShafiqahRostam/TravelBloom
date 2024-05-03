@@ -16,7 +16,7 @@ fetch("travel_recommendation_api.json")
   })
   .catch((err) => {
     console.log(err);
-    addInvalidSearchResultItem("Error occurred: failed to retrieve search results.");
+    addInvalidsearchResultItem("Error occurred: failed to retrieve search results.");
   });
 
 btnClear.addEventListener("click", function () {
@@ -29,17 +29,17 @@ btnSearch.addEventListener("click", function () {
   searchResults.innerHTML = "";
 
   if (!text) {
-    addInvalidSearchResultItem("Please enter a destination or keyword");
+    addInvalidsearchResultItem("Please enter a destination or keyword");
     return;
   }
 
   if (!recommendationsList) {
-    addInvalidSearchResultItem("Error occurred: failed to retrieve search results.");
+    addInvalidsearchResultItem("Error occurred: failed to retrieve search results.");
     return;
   }
   
   if (!beachRegex.test(text) && !templeRegex.test(text) && !countryRegex.test(text)) {
-    addInvalidSearchResultItem(`No results found for '${text}'`);
+    addInvalidsearchResultItem(`No results found for '${text}'`);
     return;
   }
 
@@ -50,13 +50,13 @@ btnSearch.addEventListener("click", function () {
 function processSearch(text) {
   if (beachRegex.test(text)) {
     recommendationsList.beaches.forEach(beach => {
-      addSearchResultItem(beach.name, beach.description, beach.imageUrl);
+      addsearchResultItem(beach.name, beach.description, beach.imageUrl);
     });
   }
 
   if (templeRegex.test(text)) {
     recommendationsList.temples.forEach(temple => {
-      addSearchResultItem(temple.name, temple.description, temple.imageUrl);
+      addsearchResultItem(temple.name, temple.description, temple.imageUrl);
     });
   }
 
@@ -70,19 +70,19 @@ function processCountries(text) {
   if (!country) {
     recommendationsList.countries.forEach(country => {
       country.cities.forEach(city => {
-        addSearchResultItem(city.name, city.description, city.imageUrl);
+        addsearchResultItem(city.name, city.description, city.imageUrl);
       });
     });
   } else {
     country.cities.forEach(city => {
-      addSearchResultItem(city.name, city.description, city.imageUrl);
+      addsearchResultItem(city.name, city.description, city.imageUrl);
     });
   }
 }
 
-function addSearchResultItem(name, description, imageUrl) {
+function addsearchResultItem(name, description, imageUrl) {
   const item = document.createElement("div");
-  item.innerHTML = `<div class="searchResultItem">
+  item.innerHTML = `<div class="search-result-item">
                       <img src="${imageUrl}" width="100%" />
                       <div style="padding: 1em; padding-top: 0;">
                         <h4>${name}</h4>
@@ -93,9 +93,9 @@ function addSearchResultItem(name, description, imageUrl) {
   searchResults.append(item);
 }
 
-function addInvalidSearchResultItem(message) {
+function addInvalidsearchResultItem(message) {
   const item = document.createElement("div");
-  item.innerHTML = `<div class="searchResultItem">
+  item.innerHTML = `<div class="search-result-item">
                       <span style="display: inline-block; padding: 0.75em 1em">${message}</span>
                     </div>`;
   searchResults.append(item);

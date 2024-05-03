@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TravelBloom</title>
+    <title>TravelBloom - Contact Us</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <nav id="navMain">
-      <div style="max-width: 1280px; margin: auto">
+      <div>
         <div id="logo">
-          <img src="./assets/images/site/logo.png" alt="" style="height: 50px" />
+          <img src="./assets/images/site/logo.png" alt="TravelBloom logo" />
         </div>
         <ul>
           <li>
@@ -30,21 +30,24 @@
         </div>
       </div>
     </nav>
-    <div id="contactUs" class="content" style="gap: 2em">
-      <section style="flex: 1">
+    <div id="contactUs" class="content">
+      <section>
         <h1>Contact Us</h1>
         <p>Got a question or need help planning your next adventure? We're here to assist! Please use the contact form below to reach out to us with any inquiries or feedback. Our team at TravelBloom is dedicated to ensuring your travel planning is as seamless and enjoyable as possible. Fill out the form, and we'll get back to you as soon as we can. Let’s make your travel dreams a reality together!</p>
       </section>
-      <section style="flex: 1">
-        <div style="background-color: rgba(0, 0, 0, 0.25); padding: 1em; border-radius: 0.5em">
-          <form id="formContactUs" action="">
-            <label for="txtName">Name</label><input type="text" name="" id="txtName" style="margin-bottom: 0.5em" /> <label for="txtEmail">Email</label><input type="text" name="" id="txtEmail" style="margin-bottom: 0.5em" /> <label for="txtMessage">Message</label><textarea name="" id="txtMessage" cols="30" rows="10" style="margin-bottom: 0.5em"></textarea>
-            <button style="display: block; width: 100%" class="btn-primary large">Submit</button>
+      <section>
+          <form id="formContactUs">
+            <label for="txtName">Name</label>
+            <input type="text" name="" id="txtName" />
+            <label for="txtEmail">Email</label>
+            <input type="text" name="" id="txtEmail" />
+            <label for="txtMessage">Message</label>
+            <textarea id="txtMessage" cols="30" rows="10"></textarea>
+            <button class="btn-primary large">Submit</button>
           </form>
-        </div>
       </section>
     </div>
-    <div id="socialMedia" style="position: absolute; left: 0; top: 40%">
+    <div id="socialMedia">
       <ul>
         <li><a href="https://twitter.com/" class="social-media-icon" id="twitter">Twitter</a></li>
         <li><a href="https://www.facebook.com/" class="social-media-icon" id="facebook">Facebook</a></li>
